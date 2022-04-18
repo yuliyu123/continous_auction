@@ -1,6 +1,5 @@
-** Continuous Auction **
-
-A continuous auction where users can enter by sending a stream to the contract.
+## Overview
+A continuous auction implemented by superfluid where users can enter by sending a stream to the contract.
 
 In principle, the highest bid is the winner of the auction.
 
@@ -10,19 +9,11 @@ In order to be the winner, a user must send a stream that is higher than the cur
 
 In order to avoid being gameable, the step is enforced at all levels of the list of bidders. This means the list is quite unusual, and is not a simple ordered list (run the tests to see what I mean).
 
-TODO:
-
-- make it so the money can be taken out.
-- make the contract an NFT so it can be sold.
-- make the contract redirect income to the owner.
-- keep track of historical bids?
-
-# Usage
-
 ## Run tests
 
 ```bash
 yarn install
 yarn build
 yarn test
+yarn coverage
 ```
