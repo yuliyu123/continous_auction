@@ -9,7 +9,7 @@
     "deploy": "npm run build && RELEASE_VERSION=v1 npx truffle --network goerli exec scripts/deploy.js",
     "copy-watch": "nodemon --watch \"../../packages\" --ext \"js,ts,tsx,sol\" --exec rsync --archive --delete \"../../packages/\" \"./node_modules/@superfluid-finance/\""
   },
-  "author": "Superfluid",
+  "author": "pks",
   "license": "MIT",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
